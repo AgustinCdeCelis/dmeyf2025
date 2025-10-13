@@ -1,0 +1,24 @@
+STUDY_NAME : "lgb_optimization_competencia04"
+
+competencia01:
+    DATA_PATH: "data/competencia_01.csv"
+    SEMILLA: [484643,386143, 912337, 498053, 292627]
+    MES_TRAIN: [202101,202102]
+    MES_VALIDACION: 202103
+    MES_TEST: 202104
+    FINAL_TRAIN: [202101,202102,202103,202104]
+    FINAL_PREDICT: 202106
+    GANANCIA_ACIERTO: 780000
+    COSTO_ESTIMULO : 20000
+
+parametros_lgb:
+    n_trail: 100
+    num_leaves: [10,300]
+    learning_rate: [0.01,0.3]
+    feature_fraction: [0.4,1.0]
+    bagging_fraction: [0.4,1.0]
+    min_child_samples: [5,100]
+    max_depth: [3,15]
+    reg_alpha: [0.0,10.0]
+    reg_lambda: [0.0,10.0]
+    bin: [30,31]

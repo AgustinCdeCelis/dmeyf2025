@@ -1,0 +1,11 @@
+#ignorar notebooks
+logs/
+data/
+predict/
+logs/
+test/
+notebooks/
+.venv/
+Clase03.md
+analisis.txt
+
